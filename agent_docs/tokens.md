@@ -5,10 +5,6 @@ already has a good scale, keep its values and fix only how they're used. These
 are starting points, not a house style. The direction in `DESIGN_MAP.md` can
 move any of them. When it does, write the new value into the map.
 
-> Values adapted from unslop's `references/tokens.md`. Not covered by the kit's
-> MIT license; see `THIRD_PARTY_NOTICES.md`. The motion values are reconciled with
-> Emil Kowalski's skills; see `agent_docs/motion.md`.
-
 ## Spacing
 Scale: **4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96, 128**. Any multiple of 4 is fine. A 2px step is fine for nudges inside small controls.
 
@@ -96,7 +92,3 @@ Use one set (the project's own, otherwise lucide), at 16 or 18px with a 1.5 stro
 
 ## Motion
 See `agent_docs/motion.md` for curves and durations. In short: use one ease-out curve, keep UI under 300ms, and animate transform and opacity only.
-
----
-
-Part of unslop by Damir Sokolovsky (@heydamir), CC BY 4.0. Keep this credit in copies and adaptations.

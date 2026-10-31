@@ -1,8 +1,6 @@
 # Motion
 
-How to decide whether something moves, and how it moves if it does. The craft
-bar comes from Emil Kowalski's skills (MIT). Where unslop and Emil give
-different numbers, this file says which one the kit uses and why.
+How to decide whether something moves, and how it moves if it does.
 
 ## 1. Should it animate at all?
 
@@ -44,7 +42,7 @@ If the task needs a *component* (toast, drawer, menu), use an accessible primiti
 | Constant motion (progress, marquee) | `linear` |
 
 **Never use ease-in on UI.** It delays the exact moment the user is watching.
-(unslop suggests `cubic-bezier(0.22, 1, 0.36, 1)` as its single curve. That's practically the same strong ease-out. Use whichever one the project already has. Don't add both.)
+(`cubic-bezier(0.22, 1, 0.36, 1)` is practically the same strong ease-out. Use whichever one the project already has. Don't add both.)
 
 **Duration**
 
@@ -57,7 +55,7 @@ If the task needs a *component* (toast, drawer, menu), use an accessible primiti
 | Stagger between items | 30–60ms, at most ~6 items |
 | Marketing and explanatory | longer if needed |
 
-**Product UI stays under 300ms.** unslop allows 300–500ms for *page entrances*. The kit allows that only on landing pages and first-load moments, never on repeated interactions.
+**Product UI stays under 300ms.** 300–500ms is allowed only for page entrances on landing pages and first-load moments, never on repeated interactions.
 Rise distance on enter: 6–12px. Press scale: 0.97–0.98. Exits can be faster than enters.
 
 **Springs** are for drag with momentum, interruptible gestures, and things that should feel alive: `{ type: "spring", duration: 0.5, bounce: 0.2 }`. Keep bounce at 0.1–0.3. Avoid bounce on ordinary UI.
@@ -95,6 +93,3 @@ Autoplaying motion longer than 5s next to other content needs a pause, stop or h
 | Missing reduced-motion handling | A gentler variant |
 | `animate-pulse` / `animate-ping` on non-live things | Static |
 | Everything entering at once | A 30–60ms stagger, or one entrance only |
-
-## Further reading (upstream)
-Emil Kowalski's skills cover more than this file: recipes for dropdowns, toasts, drawers and hold-to-confirm, a performance deep-dive, and React Native/Expo. Install them with `npx skills@latest add emilkowalski/skills`. This kit's `/motion-craft` and `/motion-review` are distilled versions that work with `DESIGN_MAP.md`.

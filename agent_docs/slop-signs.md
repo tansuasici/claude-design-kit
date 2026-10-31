@@ -8,9 +8,6 @@ Slop is not "ugly". It is **unchosen**: a value that landed because it was the
 default, the trend, or the first thing typed. The fix is almost always
 subtraction plus one deliberate choice.
 
-> Adapted (condensed and reorganised) from unslop's `references/signs.md`.
-> Not covered by the kit's MIT license; see `THIRD_PARTY_NOTICES.md`.
-
 ## Surfaces and color
 - Purple to blue or violet to pink gradients on backgrounds, cards, buttons or the active nav item → one neutral surface; the accent only where it means something
 - Gradient text in headings, numbers or the logo → solid primary text
@@ -93,14 +90,9 @@ nobody made a decision. Watch for them after the fixes.
 - A hero visual that is an empty box or a generic picture → a product preview in code, or an image from the world
 - Every product ending up with the same layout, type and palette → let the direction decide
 
-## Kit additions
-These aren't from unslop. They come from this kit's other sources.
-- `outline: none` with no visible replacement → a `:focus-visible` ring (Vercel guidelines)
-- `...` (three dots) in UI copy → `…` (Vercel guidelines)
-- `transform: scale(0)` entrances → `scale(0.95)` plus opacity (Emil Kowalski)
-- `ease-in` on anything that appears → ease-out (Emil Kowalski)
-- A page following the stock sequence of hero, logos, three features, testimonial, pricing, CTA → sections that come from the claims the page has to make (taste-skill)
-
----
-
-Part of unslop by Damir Sokolovsky (@heydamir), CC BY 4.0. Keep this credit in copies and adaptations.
+## Interface and motion
+- `outline: none` with no visible replacement → a `:focus-visible` ring
+- `...` (three dots) in UI copy → `…`
+- `transform: scale(0)` entrances → `scale(0.95)` plus opacity
+- `ease-in` on anything that appears → ease-out
+- A page following the stock sequence of hero, logos, three features, testimonial, pricing, CTA → sections that come from the claims the page has to make

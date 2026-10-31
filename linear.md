@@ -23,4 +23,3 @@
 - [ ] Data-viz skill (chart form, color formula, dark mode)
 - [ ] Copy/voice skill (microcopy, empty states, error messages)
 - [ ] Field overlays: dashboard, marketing site, dev tool, consumer app
-- [ ] More sources as they come in; log each in SOURCES.md with its license

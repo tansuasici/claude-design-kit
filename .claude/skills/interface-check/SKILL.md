@@ -13,8 +13,7 @@ for keyboards, touch, screen readers, slow networks and real content. Each
 finding cites `file:line`, names the rule it breaks, and gives the concrete fix.
 If you couldn't run or render something, say the finding is *inferred from code*.
 
-Rules: `agent_docs/interface-guidelines.md` (paraphrased from Vercel's Web Interface Guidelines, MIT).
-For the full upstream list: `npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines`.
+Rules: `agent_docs/interface-guidelines.md`.
 
 ## When to Use
 - Before shipping any interactive screen: forms, dialogs, menus, navigation, tables.

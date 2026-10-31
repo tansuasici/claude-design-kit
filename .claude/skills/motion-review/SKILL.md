@@ -6,8 +6,6 @@ user-invocable: true
 
 # Motion Review
 
-> Distilled from Emil Kowalski's `review-animations` skill (MIT).
-
 ## Core Rule
 
 **Strict reviewer, specific fixes.** Every animation in scope is measured against

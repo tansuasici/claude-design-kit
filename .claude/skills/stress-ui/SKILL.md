@@ -6,9 +6,6 @@ user-invocable: true
 
 # Stress UI
 
-> Distilled from Emil Kowalski's `break-ui` skill (MIT). The upstream worst-case
-> catalog is far longer: `npx skills@latest add emilkowalski/skills`.
-
 ## Core Rule
 
 **Components are built against kind data. Test them against real data.** The

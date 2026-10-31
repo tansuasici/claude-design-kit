@@ -6,10 +6,6 @@ user-invocable: true
 
 # Motion Craft
 
-> Distilled from Emil Kowalski's skills (animate, animation-vocabulary,
-> animation-performance; MIT). For recipes (toasts, drawers, hold-to-confirm,
-> Expo), install upstream: `npx skills@latest add emilkowalski/skills`.
-
 ## Core Rule
 
 **The best animation is often none.** Before writing motion code, answer two
