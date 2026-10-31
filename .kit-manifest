@@ -39,6 +39,7 @@ agent_docs/interface-guidelines.md
 agent_docs/motion.md
 agent_docs/slop-signs.md
 agent_docs/tokens.md
+assets/logo.png
 install.sh
 package.json
 uninstall.sh
