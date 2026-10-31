@@ -7,14 +7,14 @@
   },
   "metadata": {
     "description": "Design discipline kit for Claude Code: interfaces that look chosen, not defaulted.",
-    "version": "0.1.2"
+    "version": "0.1.3"
   },
   "plugins": [
     {
       "name": "claude-design-kit",
       "source": "./",
       "description": "Brief → Direction → Build → Audit for interface work. A DESIGN_MAP.md direction file, tiered session boot, hooks (slop-scan, motion-gate, prompt-router, session-start), user-invocable skills (design-brief, direction, slop-audit, interface-check, motion-craft, motion-review, stress-ui, brand-method) and review agents (design-critic, interface-reviewer, motion-reviewer).",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "author": {
         "name": "tansuasici",
         "url": "https://github.com/tansuasici"

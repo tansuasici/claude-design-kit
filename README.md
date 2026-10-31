@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.1.2-c2185b" alt="version 0.1.2">
+  <img src="https://img.shields.io/badge/version-0.1.3-c2185b" alt="version 0.1.3">
   <img src="https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY%204.0-c2185b" alt="MIT + CC BY 4.0">
 </p>
 

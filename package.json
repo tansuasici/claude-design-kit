@@ -1,6 +1,6 @@
 {
   "name": "@tansuasici/claude-design-kit",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Drop-in kit that makes Claude Code design interfaces that look chosen, not defaulted: design map, slop and motion hooks, audit skills and critic agents",
   "license": "MIT",
   "repository": {
@@ -26,6 +26,7 @@
   },
   "files": [
     "bin/",
+    "agents/",
     "hooks/",
     "agent_docs/",
     ".claude/",
