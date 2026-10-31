@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.1.1-c2185b" alt="version 0.1.1">
+  <img src="https://img.shields.io/badge/version-0.1.2-c2185b" alt="version 0.1.2">
   <img src="https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY%204.0-c2185b" alt="MIT + CC BY 4.0">
 </p>
 
@@ -73,7 +73,7 @@ bash ~/claude-design-kit/install.sh "$PWD"
 
 | | npx / clone | Plugin |
 |---|---|---|
-| Skills, agents, hooks | copied into `.claude/` | loaded from the plugin, namespaced (`/claude-design-kit:design-brief`) |
+| Skills, agents, hooks | copied into `.claude/` | loaded from the plugin, namespaced (`/design-kit:design-brief`) |
 | `CLAUDE.md` rules | installed | not loaded |
 | `DESIGN_MAP.md`, `agent_docs/` | seeded in the repo | stay in the plugin; `session-start` points at them |
 | Updates | `npx @tansuasici/claude-design-kit init --upgrade` | `/plugin update` |
