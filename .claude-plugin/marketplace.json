@@ -1,0 +1,38 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-design-kit",
+  "id": "claude-design-kit",
+  "owner": {
+    "name": "tansuasici",
+    "url": "https://github.com/tansuasici"
+  },
+  "metadata": {
+    "description": "Design discipline kit for Claude Code: interfaces that look chosen, not defaulted.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "claude-design-kit",
+      "source": "./",
+      "description": "Brief → Direction → Build → Audit for interface work. A DESIGN_MAP.md direction file, tiered session boot, hooks (slop-scan, motion-gate, prompt-router, session-start), user-invocable skills (design-brief, direction, slop-audit, interface-check, motion-craft, motion-review, stress-ui, brand-method) and review agents (design-critic, interface-reviewer, motion-reviewer).",
+      "version": "0.1.0",
+      "author": {
+        "name": "tansuasici",
+        "url": "https://github.com/tansuasici"
+      },
+      "keywords": [
+        "design",
+        "ui",
+        "frontend",
+        "design-system",
+        "motion",
+        "accessibility",
+        "anti-slop",
+        "brand-identity"
+      ],
+      "category": "workflow",
+      "homepage": "https://github.com/tansuasici/claude-design-kit",
+      "license": "MIT"
+    }
+  ]
+}
