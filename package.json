@@ -1,13 +1,13 @@
 {
   "name": "@tansuasici/claude-design-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Drop-in kit that makes Claude Code design interfaces that look chosen, not defaulted: design map, slop and motion hooks, audit skills and critic agents",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tansuasici/claude-design-kit.git"
   },
-  "homepage": "https://github.com/tansuasici/claude-design-kit",
+  "homepage": "https://claudedesignkit.tansuasici.com",
   "keywords": [
     "claude-code",
     "claude",
@@ -20,7 +20,13 @@
     "anti-slop",
     "agent-config"
   ],
+  "bin": {
+    "claude-design-kit": "bin/claude-design-kit.js",
+    "cdk": "bin/claude-design-kit.js"
+  },
   "files": [
+    "bin/",
+    "hooks/",
     "agent_docs/",
     ".claude/",
     ".claude-plugin/",
@@ -40,5 +46,8 @@
   ],
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

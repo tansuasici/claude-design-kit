@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.1.0-c2185b" alt="version 0.1.0">
+  <img src="https://img.shields.io/badge/version-0.1.1-c2185b" alt="version 0.1.1">
   <img src="https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY%204.0-c2185b" alt="MIT + CC BY 4.0">
 </p>
 
@@ -42,19 +42,41 @@ product, written down in `DESIGN_MAP.md` before the CSS.**
 
 ## Quick Start
 
-```bash
-git clone https://github.com/tansuasici/claude-design-kit ~/claude-design-kit
-```
-
 From your product repo:
 
 ```bash
-bash ~/claude-design-kit/install.sh "$PWD"
+npx @tansuasici/claude-design-kit init
 ```
 
 Then start a Claude Code session and run `/design-brief`, then `/direction`.
 `DESIGN_MAP.md` is the single most important file: it is read first every
 session.
+
+### Other ways to install
+
+**As a Claude Code plugin**, inside Claude Code:
+
+```
+/plugin marketplace add tansuasici/claude-design-kit
+/plugin install claude-design-kit@claude-design-kit
+```
+
+**From a clone:**
+
+```bash
+git clone https://github.com/tansuasici/claude-design-kit ~/claude-design-kit
+bash ~/claude-design-kit/install.sh "$PWD"
+```
+
+| | npx / clone | Plugin |
+|---|---|---|
+| Skills, agents, hooks | copied into `.claude/` | loaded from the plugin, namespaced (`/claude-design-kit:design-brief`) |
+| `CLAUDE.md` rules | installed | not loaded |
+| `DESIGN_MAP.md`, `agent_docs/` | seeded in the repo | stay in the plugin; `session-start` points at them |
+| Updates | `npx @tansuasici/claude-design-kit init --upgrade` | `/plugin update` |
+
+The npx installer is the full kit. The plugin is the lighter option when you
+want the skills and hooks without kit files in the repo.
 
 ### Installer options
 
@@ -70,10 +92,10 @@ overwritten. An existing `.claude/settings.json` gets the kit's hooks merged in
 rather than replaced. If you already have a `CLAUDE.md`, the installer keeps it
 and warns; move your rules into `CLAUDE.project.md` and rerun with `--force`.
 
-`uninstall.sh` deletes only the files the kit installed; `--keep-project` also
+`npx @tansuasici/claude-design-kit uninstall` (or `uninstall.sh`) deletes only the files the kit installed; `--keep-project` also
 keeps the overlay.
 
-Requirements: bash, git and python3. The scan hooks (`slop-scan`, `motion-gate`)
+Requirements: bash, git and python3 (Node 18+ for npx). The scan hooks (`slop-scan`, `motion-gate`)
 and the settings merge need python3; without it they stay silent.
 
 ## What CLAUDE.md Enforces

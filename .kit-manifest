@@ -40,6 +40,8 @@ agent_docs/motion.md
 agent_docs/slop-signs.md
 agent_docs/tokens.md
 assets/logo.png
+bin/claude-design-kit.js
+hooks/hooks.json
 install.sh
 package.json
 uninstall.sh

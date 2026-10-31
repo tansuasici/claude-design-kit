@@ -53,6 +53,10 @@ if [ -f "$MAP" ]; then
 else
   append_line "No DESIGN_MAP.md. Copy the kit template and run /design-brief before building UI."
 fi
+# Plugin install: the kit's docs and templates stay in the plugin, not the project.
+if [ -n "${CLAUDE_PLUGIN_ROOT:-}" ] && [ ! -d "$ROOT/agent_docs" ]; then
+  append_line "Kit runs as a plugin: read agent_docs/*.md from $CLAUDE_PLUGIN_ROOT/agent_docs/, and copy the DESIGN_MAP.md template from $CLAUDE_PLUGIN_ROOT/DESIGN_MAP.md."
+fi
 if [ -f "$ROOT/CLAUDE.project.md" ]; then
   if grep -q '<\.\.\.>' "$ROOT/CLAUDE.project.md" 2>/dev/null; then
     append_line "Project overlay: CLAUDE.project.md is still the template; fill in Product and Stack when you know them."
