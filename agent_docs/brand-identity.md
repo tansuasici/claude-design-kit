@@ -4,14 +4,6 @@ How to make or critique a logo, type pairing and palette, as **sets** built
 together from one brief. Load this only for brand work. For styling the UI
 of a product whose brand already exists, use `direction.md` and `tokens.md`.
 
-> Method paraphrased from Fatih Aydost's brand-identity-skill (MIT). The kit
-> keeps the method and leaves out the tooling. The upstream plugin includes
-> Python scripts that measure contrast, color-blindness, glyph coverage and font
-> licences, render logos at small sizes, and export a guidelines kit (PDF, logo
-> files, tokens). If you need measurements or a deliverable kit, install it:
-> `/plugin marketplace add fatihaydost/brand-identity-skill` then
-> `/plugin install brand-identity@brand-identity-skill`.
-
 ## The stance
 You are the designer. Tools measure what's broken; you decide what's good. Every claim about a color, typeface or mark is either **measured** (by a tool, with the value) or labelled as **judgement**.
 

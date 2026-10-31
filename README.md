@@ -7,7 +7,6 @@
 <p align="center">Drop-in templates that make Claude Code design like an opinionated designer-engineer instead of a template generator: interfaces that look chosen, not defaulted.</p>
 
 <p align="center">
-  <a href="https://github.com/tansuasici/claude-design-kit/blob/main/SOURCES.md">Sources</a> ·
   <a href="https://github.com/tansuasici/claude-design-kit/blob/main/CHANGELOG.md">Changelog</a>
 </p>
 
@@ -174,18 +173,6 @@ agent_docs/               slop-signs, tokens, motion, interface-guidelines,
 2. **Customize `CLAUDE.project.md`**: stack, component library, brand constraints that override kit defaults.
 3. **Grow the Don'ts.** Every visual correction that generalises goes to `DESIGN_MAP.md → Don'ts`, so it holds next session.
 
-## Sources
-
-The kit distills a workflow from these projects. Each one is worth installing
-on its own; see [SOURCES.md](SOURCES.md) for what came from where and the
-install commands.
-
-- [unslop](https://github.com/heydamir/unslop) by Damir Sokolovsky: slop signs, tokens, direction (CC BY 4.0)
-- [emilkowalski/skills](https://github.com/emilkowalski/skills) by Emil Kowalski: motion craft and review, UI stress testing (MIT)
-- [taste-skill](https://github.com/Leonxlnx/taste-skill) by Leonxlnx: inventory, argument, competitor test (MIT)
-- [Web Interface Guidelines](https://vercel.com/design/guidelines) by Vercel: interface rules (MIT)
-- [brand-identity-skill](https://github.com/fatihaydost/brand-identity-skill) by Fatih Aydost: brand method (MIT)
-
 ## Contributing
 
 PRs welcome. If you've found a slop sign the kit misses, or a hook false
@@ -193,5 +180,4 @@ positive, open an issue or a PR with a fixture that shows it.
 
 ## License
 
-MIT, except three files adapted from unslop, which stay CC BY 4.0. See
-[LICENSE](LICENSE) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+MIT, except three files that are CC BY 4.0. See [LICENSE](LICENSE).

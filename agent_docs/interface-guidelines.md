@@ -4,12 +4,6 @@ The rules that make an interface work for keyboards, touch, screen readers,
 slow networks and long content. They aren't about taste, and every project
 needs them.
 
-> Paraphrased and condensed from Vercel's Web Interface Guidelines
-> (vercel-labs/web-interface-guidelines, MIT) and the public page at
-> vercel.com/design/guidelines. The wording is the kit's own. For the full,
-> current list, install the upstream skill:
-> `npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines`.
-
 Each rule is phrased so you can check it. `/interface-check` goes through these sections in order.
 
 ## Keyboard

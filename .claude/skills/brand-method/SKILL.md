@@ -6,13 +6,6 @@ user-invocable: true
 
 # Brand Method
 
-> Method paraphrased from Fatih Aydost's brand-identity-skill (MIT). This
-> skill has no tooling. For measured checks (contrast, color-blindness, glyph
-> coverage, font licences, small-size logo renders) and an exported guidelines
-> kit, install the upstream plugin:
-> `/plugin marketplace add fatihaydost/brand-identity-skill` then
-> `/plugin install brand-identity@brand-identity-skill`.
-
 ## Core Rule
 
 **You design; measurements judge what's broken; the user picks.** Every claim about
@@ -39,7 +32,7 @@ Method: `agent_docs/brand-identity.md`.
    Checks: measured: … | judgement: … | AI-default flags: … (reason)
    ```
    "Pick a set, or ask for parts of different sets."
-9. **After the pick**: add 1–2 misuses of this mark, write the tokens into `DESIGN_MAP.md → Tokens`, and list the deliverables. If the user needs files (SVG/PDF kit), point to the upstream plugin.
+9. **After the pick**: add 1–2 misuses of this mark, write the tokens into `DESIGN_MAP.md → Tokens`, and list the deliverables. If the user needs files (SVG/PDF kit), say this skill stops at the method and the tokens.
 
 ## Never
 - Claim a color or font "converts", "builds trust" or "feels premium" as evidence.

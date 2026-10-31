@@ -5,10 +5,6 @@ Everything that follows (tokens, layout, copy, visuals, motion) is checked
 against it. Without one, the model fills every gap with its average, and the
 average is what every AI-built page looks like.
 
-> Method combined from unslop's five-line direction (Damir Sokolovsky, CC BY
-> 4.0, paraphrased) and taste-skill's subject inventory, argument and idea
-> sentence (Leonxlnx, MIT, paraphrased). The wording is the kit's own.
-
 ## 0. Page or app screen?
 Decide this first. It changes most of the rules below.
 - **A page** is read and scrolled: landing, marketing, product site, portfolio, event. The idea, the argument and the "one live thing" all apply. Surfaces may be tinted toward the world.
@@ -61,7 +57,6 @@ Show the inventory, the five lines, the idea sentence and the competitor test to
 
 ## Choosing among several directions
 If you're unsure, write **three** directions that differ on at least two axes (for example, quiet↔loud, warm↔technical, editorial↔product-led). Hold each against the inventory and pick the one that can carry something only this product has, *not* the most familiar one. Say in one line why.
-taste-skill's `draw.mjs` deals researched directions from a library of 247 gallery sites. If you want that, install the upstream skill (`/plugin marketplace add Leonxlnx/taste-skill`); the kit doesn't vendor it.
 
 ## Red flags in a direction
 - Any banned character word, or a character that would also describe the competitor.

@@ -6,11 +6,6 @@ user-invocable: true
 
 # Slop Audit
 
-> Adapted from **unslop** by Damir Sokolovsky (@heydamir). This file is
-> licensed CC BY 4.0, not under the kit's MIT license; see `THIRD_PARTY_NOTICES.md`.
-> The full upstream skill (story video, hero image generation, effects) is at
-> `git clone https://github.com/heydamir/unslop`.
-
 ## Core Rule
 
 **Fix the craft, keep the product.** The features, the content and the order of
@@ -62,7 +57,3 @@ Render again and compare with the audit list. Check the template look: does it n
 - Remove features, sections or content to make a screen "cleaner".
 - Replace a real brand color with your preferred accent.
 - Claim contrast passes without measuring. Say *estimated* if you didn't measure.
-
----
-
-Part of unslop by Damir Sokolovsky (@heydamir), CC BY 4.0. Keep this credit in copies and adaptations.
