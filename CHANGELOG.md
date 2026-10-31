@@ -5,6 +5,12 @@ All notable changes to Claude Design Kit will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+### Changed
+
+* The plugin is now `design-kit` in the shared `tansuasici` marketplace. An existing `claude-design-kit@claude-design-kit` install keeps updating; to move over, run `/plugin uninstall claude-design-kit@claude-design-kit`, then `/plugin marketplace add tansuasici/claude-plugins` and `/plugin install design-kit@tansuasici`.
+
 ## 0.1.1 (2026-10-31)
 
 ### Features

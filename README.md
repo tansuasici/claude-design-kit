@@ -57,9 +57,12 @@ session.
 **As a Claude Code plugin**, inside Claude Code:
 
 ```
-/plugin marketplace add tansuasici/claude-design-kit
-/plugin install claude-design-kit@claude-design-kit
+/plugin marketplace add tansuasici/claude-plugins
+/plugin install design-kit@tansuasici
 ```
+
+Installed it earlier as `claude-design-kit@claude-design-kit`? That keeps
+updating; to move over, uninstall it and install `design-kit@tansuasici`.
 
 **From a clone:**
 
