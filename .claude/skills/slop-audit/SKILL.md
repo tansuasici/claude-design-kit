@@ -20,6 +20,15 @@ Signs: `agent_docs/slop-signs.md`. Values: `agent_docs/tokens.md`. Motion: `agen
 ### 1. Look
 Render the screen and take screenshots (desktop and ~375px, plus dark if supported). If you can't render, say so and audit from the code; label every finding as *inferred*.
 
+Before the line-by-line audit, name which of the five whole-screen failures the screenshots show. Each one points at the passes that fix it:
+- **Too much**: every row full of real text and numbers, badges and icons everywhere, no quiet area. The more detail, the more generated it looks. → Copy, Details.
+- **Empty**: grey boxes, placeholder cards, a preview built too small to read as the product. → Visuals, Layout.
+- **Boxed**: the product shrunk into a card with even margins on four sides, or cards inside cards. → Layout.
+- **Flat**: everything at the same weight in the same bordered card, so the eye has nowhere to land. → Layout, Type.
+- **Bland**: tidy, but nothing from the direction's world or signature; it could be any product. → Back to the direction.
+
+Most screens show one or two. None at all is a real answer; say so.
+
 ### 2. Audit
 Go through **every group** in `slop-signs.md` (surfaces and color, type, icons, spacing, copy, components, landing, visuals, motion, template look, kit additions). List each sign with where it lives: `file:line` or a screen region.
 

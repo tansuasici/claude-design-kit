@@ -96,3 +96,59 @@ nobody made a decision. Watch for them after the fixes.
 - `transform: scale(0)` entrances → `scale(0.95)` plus opacity
 - `ease-in` on anything that appears → ease-out
 - A page following the stock sequence of hero, logos, three features, testimonial, pricing, CTA → sections that come from the claims the page has to make
+
+## Pairs
+The same element, slop then fixed. A sign is easier to spot once you've seen
+both halves side by side. The fixed halves are corrections, not templates:
+the right value still comes from `DESIGN_MAP.md`.
+
+**Stat card**
+```html
+<!-- slop: gradient, glow, emoji, no reference -->
+<div class="rounded-2xl bg-gradient-to-br from-violet-500 to-blue-500 p-6 shadow-[0_0_24px_rgba(139,92,246,.5)]">
+  <p class="text-xs font-bold uppercase tracking-widest text-white/70">💰 REVENUE</p>
+  <p class="text-4xl font-black text-white">$123,456</p>
+  <p class="text-white">+12%!!</p>
+</div>
+<!-- fixed: one surface, three text roles, a change with a reference -->
+<div class="rounded-lg border border-border bg-surface p-4">
+  <p class="text-sm text-muted">Revenue</p>
+  <p class="text-2xl font-medium tabular-nums">$48,210</p>
+  <p class="text-sm text-muted tabular-nums">+12% vs last month</p>
+</div>
+```
+
+**Hero**
+```html
+<!-- slop: badge, hype headline, centered stack, three actions -->
+<section class="text-center">
+  <span class="rounded-full bg-violet-500/10 px-3 py-1">✨ Introducing Acme 2.0</span>
+  <h1 class="text-7xl font-extrabold">Supercharge your workflow with AI</h1>
+  <button>Get started</button> <button>Book a demo</button> <button>Watch video</button>
+</section>
+<!-- fixed: what it does and for whom, one primary action, the product leads (example product; every claim is a placeholder) -->
+<section class="grid md:grid-cols-[5fr_7fr] items-center gap-8">
+  <div>
+    <h1 class="text-5xl font-medium">Close the month in two days, not ten [PLACEHOLDER]</h1>
+    <p class="text-muted">Reconciliation for finance teams on NetSuite. [PLACEHOLDER: real claim]</p>
+    <button>Start a trial</button>
+  </div>
+  <img src="/product/reconcile.png" alt="The reconciliation queue with three unmatched entries" />
+</section>
+```
+
+**Status**
+```html
+<!-- slop: a pulsing glow on something that isn't live -->
+<span class="animate-pulse rounded-full bg-green-400 px-2 shadow-[0_0_12px_#4ade80]">🟢 Active</span>
+<!-- fixed: a static dot plus the word, so color isn't the only signal -->
+<span class="inline-flex items-center gap-1.5 text-sm"><span class="size-1.5 rounded-full bg-success"></span>Active</span>
+```
+
+**Card hover**
+```css
+/* slop: every property animated, the card jumps */
+.card { transition: all .3s; } .card:hover { transform: scale(1.05); }
+/* fixed: one named property, a surface step */
+.card { transition: background-color 150ms ease-out; } .card:hover { background: var(--surface-2); }
+```

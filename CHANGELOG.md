@@ -5,6 +5,14 @@ All notable changes to Claude Design Kit will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+### Changed
+
+* `design-critic` reviews cold: it skips the builder's rationale, ties every finding to a screenshot, ranks findings by how much of the screen they spoil, and lists what it didn't check.
+* `/slop-audit` opens with a whole-screen read for five failures (too much, empty, boxed, flat, bland), each pointing at the passes that fix it.
+* `agent_docs/slop-signs.md` ends with slop/fixed pairs for a stat card, a hero, a status and a card hover.
+
 ## 0.1.3 (2026-10-31)
 
 ### Changed

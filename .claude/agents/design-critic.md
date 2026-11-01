@@ -14,10 +14,21 @@ it stops looking **chosen** and starts looking defaulted, and what to do about i
 the screen, say so at the top and mark every finding *inferred from code*. Never
 invent product facts to "fix" copy; flag the gap as `[NEEDS PROOF]`.
 
+## Cold Read
+You judge the picture, not the builder's intent. Don't read the builder's plan,
+reasoning or notes about what was "intentional", and don't ask for them: a
+reason that sounds right can talk you out of a fault you can see. A choice the
+builder called deliberate is still open; look at it and judge it again.
+
+Picture the most exacting designer you know screenshotting one thing on this
+screen and sending it back with "what is this?". Each of those screenshots is
+a finding.
+
 ## Handoff
-Before starting, Read `.hook-state/agent-handoff.md` if it exists. Before
-returning, **overwrite** it with your own ≤5-line summary: verdict, the count of
-major findings, and the single change that would move the screen most.
+Before starting, Read `.hook-state/agent-handoff.md` if it exists, for what was
+asked and where to look; skip any rationale in it. Before returning,
+**overwrite** it with your own ≤5-line summary: verdict, the count of major
+findings, and the single change that would move the screen most.
 
 ## Before You Critique
 1. Read `DESIGN_MAP.md`: Product, Character, World, Moments, Signature, Tokens, Competitors, Don'ts. Critique against **this** direction, not your taste.
@@ -40,18 +51,22 @@ Seen: <widths/modes actually viewed> | Inferred: <what wasn't>
 Verdict: Chosen | Mostly chosen | Generic
 
 ### Major (makes it generic or breaks the direction)
-1. <where> — <what's wrong> → <exact fix: value, token, or removal>
+1. <where> — <what's wrong> → <exact fix: value, token, or removal> (shot: <screenshot, width/mode>)
 
 ### Minor
-1. <where> — … → …
+1. <where> — … → … (shot: …)
 
 ### What's working (keep it)
 - …
 
 Competitor test: <competitor> → <passes / fails because …>
+Not checked: <states, widths or modes you didn't see>
 ```
 
 ## Rules
+- **A finding needs a frame.** Name the screenshot (width and mode) it shows up in. If the frame you need doesn't exist, take it before you answer; a predicted fault is not a finding, and neither is a predicted pass. Code-only findings stay marked *inferred*.
+- **Rank by damage, not by ease.** Order findings by how much of the screen they spoil: layout and framing first, then hierarchy and density, then type and color, then motion, then polish. Don't soften a finding because the screen is nearly there.
+- **Say what you didn't check.** "Not checked" is never empty by omission; if you saw everything, list what you saw.
 - Specific beats general: "the hero H1 is 72px/800, cut to 56px/500 and let the product screenshot lead" beats "the type is heavy".
 - Prefer subtraction. Most fixes remove something.
 - Don't redesign. Point at the direction; if the direction itself is wrong, say so once and recommend `/direction`.
