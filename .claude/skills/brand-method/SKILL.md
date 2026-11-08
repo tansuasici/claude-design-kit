@@ -18,7 +18,7 @@ Method: `agent_docs/brand-identity.md`.
 1. **Intake, in one message**, only what blocks you: logo / type / palette each `new · refresh · keep · none`; number of sets (default 3); site or files; languages; whether it shows numbers; then, if unknown, sector, audience, three attributes, 3–5 real competitors.
 2. **Axes.** Pick 2–4 decision axes for this brief and place each planned set from −2 to +2. Sets differ on **at least two** axes.
 3. **Per set**, write the **mechanism** in one sentence first, then derive the mark, type and palette from it. Add one expression move, and only one.
-4. **Logo**: 4–6 one-line ideas, build one; check it at 16 and 32px. A wordmark needs one ownable detail plus a small mark.
+4. **Logo**: 4–6 one-line ideas, build one as a rough SVG; check it at 16 and 32px. A wordmark needs one ownable detail plus a small mark.
    **Type**: display for voice, text for reading; prefer OFL; note any licence.
    **Color**: hue, chroma, lightness and ground; every color has a named job.
 5. **Reflex test.** For every font, color and mark idea: "would I propose this for another brand in this sector?" If yes, justify it from the brief or replace it. **At least one set uses no AI defaults** (list in `agent_docs/brand-identity.md`).
@@ -32,7 +32,7 @@ Method: `agent_docs/brand-identity.md`.
    Checks: measured: … | judgement: … | AI-default flags: … (reason)
    ```
    "Pick a set, or ask for parts of different sets."
-9. **After the pick**: add 1–2 misuses of this mark, write the tokens into `DESIGN_MAP.md → Tokens`, and list the deliverables. If the user needs files (SVG/PDF kit), say this skill stops at the method and the tokens.
+9. **After the pick**: add 1–2 misuses of this mark, write the tokens into `DESIGN_MAP.md → Tokens`, and list the deliverables. For the finished mark and its files, continue with `/logo` from its Build step: the direction is already picked.
 
 ## Never
 - Claim a color or font "converts", "builds trust" or "feels premium" as evidence.

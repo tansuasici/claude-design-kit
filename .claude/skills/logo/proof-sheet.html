@@ -1,0 +1,79 @@
+<!doctype html>
+<!--
+  Proof sheet for /logo. Keep it next to the mark, open it, screenshot it.
+    proof-sheet.html?mark=mark.svg&dark=mark-reversed.svg&ground=%23123456&icon=1
+  mark    the file for light grounds
+  dark    optional: the file for dark grounds, if it differs
+  ground  optional: a brand color the mark has to sit on
+  icon=1  app icon files only: adds the masks row
+
+  Headless Chrome captures the window, not the page, so make it tall:
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars \
+      --user-data-dir="$(mktemp -d)" --window-size=760,1600 --screenshot=sheet.png \
+      "file://$PWD/proof-sheet.html?mark=mark.svg"
+  Add about 260 to the height for ground and 220 for icon. If the last row is cut off, the window
+  was too short. A non-square file is sized by height, so a wordmark's 16px means 16px tall.
+
+  The masks row shows the file at full size: the rounded square is close to the iOS mask, and the
+  circle is the most any mask can show. Maskable web content must stay inside the dashed circle
+  (radius 40%). Test an Android layer as its full 108dp canvas, with the 18dp margins drawn in.
+
+  Delete this file from the project afterwards; it is a working file, not a deliverable.
+-->
+<meta charset="utf-8">
+<title>Logo proof sheet</title>
+<style>
+  body { margin: 0; padding: 16px; background: #fff; color: #000; font: 12px/1.4 ui-monospace, monospace; }
+  h2 { margin: 24px 0 8px; font: inherit; font-weight: 600; }
+  .row { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px; padding: 16px; }
+  img { display: block; max-width: 100%; object-fit: contain; }
+  canvas { display: block; image-rendering: pixelated; outline: 1px solid #ddd; }
+  .solid { filter: brightness(0); }
+  .grey { filter: grayscale(1); }
+  .ios, .round { position: relative; width: 180px; height: 180px; overflow: hidden; background: #e5e5e5; }
+  .ios { border-radius: 22.4%; }
+  .round { border-radius: 50%; }
+  .ios img, .round img { width: 100%; height: 100%; }
+  .round::after { content: ''; position: absolute; inset: 10%; border: 1px dashed #000; border-radius: 50%; }
+</style>
+<body>
+<script>
+  const params = new URLSearchParams(location.search);
+  const mark = params.get('mark') || 'mark.svg';
+  const dark = params.get('dark') || mark;
+  const sizes = [16, 32, 64, 180];
+
+  function row(title, background, file, filter = '') {
+    const imgs = sizes.map(s => `<img src="${file}" height="${s}" alt="" class="${filter}">`).join('');
+    document.body.insertAdjacentHTML('beforeend', `<h2>${title}</h2><div class="row" style="background:${background}">${imgs}</div>`);
+  }
+
+  row('light ground', '#ffffff', mark);
+  row('dark ground', '#111111', dark);
+  if (params.get('ground')) row('brand ground', params.get('ground'), mark);
+  row('solid: every shape black', '#ffffff', mark, 'solid');
+  row('greyscale', '#ffffff', mark, 'grey');
+
+  // The real pixels at 16 and 32, enlarged: small size is the hardest thing to judge at 1x.
+  document.body.insertAdjacentHTML('beforeend', '<h2>pixels: 16px x8, 32px x4</h2><div class="row" id="pixels"></div>');
+  const source = new Image();
+  source.onload = () => {
+    const ratio = (source.naturalWidth / source.naturalHeight) || 1;
+    for (const [s, zoom] of [[16, 8], [32, 4]]) {
+      const canvas = document.createElement('canvas');
+      canvas.height = s;
+      canvas.width = Math.round(s * ratio);
+      canvas.getContext('2d').drawImage(source, 0, 0, canvas.width, canvas.height);
+      canvas.style.width = canvas.width * zoom + 'px';
+      canvas.style.height = s * zoom + 'px';
+      document.getElementById('pixels').append(canvas);
+    }
+  };
+  source.src = mark;
+
+  if (params.get('icon')) {
+    document.body.insertAdjacentHTML('beforeend', `<h2>masks: rounded square, circle; dashed = maskable web safe zone</h2><div class="row">
+      <div class="ios"><img src="${mark}" alt=""></div><div class="round"><img src="${mark}" alt=""></div></div>`);
+  }
+</script>
+</body>

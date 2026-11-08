@@ -150,6 +150,7 @@ All three run on Opus and leave their findings in `.hook-state/agent-handoff.md`
 | `/motion-review` | Reviewing existing motion: Before / After / Why table and a Block or Approve verdict. |
 | `/stress-ui` | Breaks a component with empty, long, many, slow, failing and RTL inputs. |
 | `/brand-method` | Logo, type and color system from a brand intake, with a reflex test. |
+| `/logo` | Logo mark, wordmark or app icon as real SVG files: three directions, a proof sheet, gates, and exports for web, iOS and Android. |
 
 ## What's Inside
 
@@ -161,7 +162,7 @@ CLAUDE.project.md         your project overlay (never touched by upgrades)
 linear.md                 open work: Now / Next / Later
 agent_docs/               slop-signs, tokens, motion, interface-guidelines,
                           direction, brand-identity
-.claude/skills/           8 user-invocable skills
+.claude/skills/           9 user-invocable skills
 .claude/agents/           3 review agents
 .claude/hooks/            6 hooks + lib/
 .claude/settings.json     hook wiring and permissions

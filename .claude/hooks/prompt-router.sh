@@ -39,8 +39,13 @@ if has 'anim(ate|ated|ates|ating|ation|ations)?|transitions?|motion|framer|gsap|
   append "[Motion] Frequency gate first: keyboard and 100+/day actions get no animation. Transform/opacity only, ease-out, UI under 300ms, reduced-motion guard. /motion-craft to build, /motion-review to judge."
 fi
 
+# Logo
+if has 'logos?|wordmarks?|app icons?|favicons?'; then
+  append "[Logo] An existing logo stays unless the user says to change it. Use /logo: three directions that differ in idea or silhouette, the user picks, build in black, prove it at every size and on every ground, then export."
+fi
+
 # Brand
-if has 'logos?|brand(ing)?|palettes?|colou?r (scheme|palette)s?|typefaces?|font pair(s|ing)?|visual identity'; then
+if has 'brand(ing)?|palettes?|colou?r (scheme|palette)s?|typefaces?|font pair(s|ing)?|visual identity'; then
   append "[Brand] Brand changes need the user's approval. Use /brand-method: sets differ on ≥2 axes, a reflex test against AI defaults, then stop for the user to pick. Claims about contrast are measured or labelled as estimates."
 fi
 
