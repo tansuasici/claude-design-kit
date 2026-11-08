@@ -5,6 +5,18 @@ All notable changes to Claude Design Kit will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+### Added
+
+* `/logo` makes a logo mark, wordmark or app icon as real SVG files: three directions, build in black, a proof sheet at every size and on every ground, pass/fail gates, one change per revision, and exports for web, iOS, Android, Google Play and print. It ships with its proof sheet and a render script.
+* `agent_docs/brand-identity.md` has a logo and icon craft section with the gates, a by-size review, a symptom table and the export rules.
+
+### Changed
+
+* `/brand-method` hands the finished mark to `/logo` instead of stopping at the method and tokens.
+* The prompt router sends logo, wordmark, app icon and favicon requests to `/logo`.
+
 ## 0.1.4 (2026-11-01)
 
 ### Changed
