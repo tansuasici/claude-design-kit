@@ -11,3 +11,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: ./scripts/check-plugin.sh
+
+  install:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash tests/install-other-kit.test.sh

@@ -100,6 +100,21 @@ keeps the overlay.
 Requirements: bash, git and python3 (Node 18+ for npx). The scan hooks (`slop-scan`, `motion-gate`)
 and the settings merge need python3; without it they stay silent.
 
+### Next to another Claude kit
+
+The Marketing, Code and Research kits use the same `CLAUDE.md` and the same hook names, so two kits can't share a folder. `install.sh` and `uninstall.sh` stop and change nothing when they find one of those kits in the target folder.
+
+Install this kit into a subfolder instead, and open Claude Code in that subfolder:
+
+```bash
+bash ~/claude-design-kit/install.sh "$PWD/design"
+cd design && claude
+```
+
+Hooks only run from the folder the session opened in. A session opened at the repo root doesn't run the subfolder's hooks, so `motion-gate` won't check a write under `design/` from there.
+
+A copy of one of those kits from before this check doesn't stop: its `install.sh` or `uninstall.sh` still replaces or deletes this kit's files.
+
 ## What CLAUDE.md Enforces
 
 | Rule | What it does |
