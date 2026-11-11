@@ -16,6 +16,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * The prompt router points navbar, mega menu, site header, pricing, CTA, footer and hero requests at `agent_docs/sections.md`.
 * `CLAUDE.md` and `AGENTS.md` load `agent_docs/sections.md` on demand, and `install.sh` and `uninstall.sh` copy and remove it.
 
+### Fixed
+
+* `branch-protect.sh` no longer blocks a feature-branch push followed by another command that mentions a protected branch, such as a PR command with a base flag. It splits the command at `&&`, `||`, `;` and `|`, and checks only the push itself. Pushes to main or master and force pushes are still blocked. `tests/branch-protect.test.sh` covers both, and CI runs it.
+
 ## 0.2.1 (2026-11-08)
 
 ### Fixed
