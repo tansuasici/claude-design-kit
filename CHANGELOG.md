@@ -5,6 +5,17 @@ All notable changes to Claude Design Kit will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+### Added
+
+* `agent_docs/sections.md` covers navigation, hero, pricing, call-to-action and footer sections. Each one gets its job, its variants and when each fits, rules you can check, and slop signs with fixes. It lists a gallery of real examples per section, to study and not to copy. It also says how to use component registries and site builders such as 21st.dev and Framer: restyle what you copy to the map's tokens, and ask before adding a dependency or connecting a paid MCP.
+
+### Changed
+
+* The prompt router points navbar, mega menu, site header, pricing, CTA, footer and hero requests at `agent_docs/sections.md`.
+* `CLAUDE.md` and `AGENTS.md` load `agent_docs/sections.md` on demand, and `install.sh` and `uninstall.sh` copy and remove it.
+
 ## 0.2.1 (2026-11-08)
 
 ### Fixed

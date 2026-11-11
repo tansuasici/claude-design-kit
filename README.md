@@ -132,7 +132,7 @@ A copy of one of those kits from before this check doesn't stop: its `install.sh
 | Hook | Event | Does |
 |---|---|---|
 | `session-start.sh` | SessionStart | Reports whether `DESIGN_MAP.md` is filled, shows Character and Signature, lists `linear.md → Now`. |
-| `prompt-router.sh` | UserPromptSubmit | Adds reminders for vague aesthetic asks, landing pages, motion, brand, forms and data UI. |
+| `prompt-router.sh` | UserPromptSubmit | Adds reminders for vague aesthetic asks, landing pages, page sections, motion, brand, forms and data UI. |
 | `slop-scan.sh` | PostToolUse (Edit/Write) | Warns on reflex gradients, `transition-all`, ambient pulse/ping, heavy display weights, emoji icons, hype copy, and banned character words in `DESIGN_MAP.md`. |
 | `motion-gate.sh` | PostToolUse (Edit/Write) | Warns on motion without a reduced-motion guard and on animated layout properties. |
 | `branch-protect.sh` | PreToolUse (Bash) | Blocks pushes to `main`/`master` and force-pushes. |
@@ -176,7 +176,7 @@ DESIGN_MAP.md             the direction: Product, Character, World, Moments,
 CLAUDE.project.md         your project overlay (never touched by upgrades)
 linear.md                 open work: Now / Next / Later
 agent_docs/               slop-signs, tokens, motion, interface-guidelines,
-                          direction, brand-identity
+                          direction, brand-identity, sections
 .claude/skills/           9 user-invocable skills
 .claude/agents/           3 review agents
 .claude/hooks/            6 hooks + lib/
