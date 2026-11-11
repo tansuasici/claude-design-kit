@@ -6,6 +6,19 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 From 0.2.2 on, release-please writes each entry from the conventional commits
 merged since the last release.
 
+## [0.2.2](https://github.com/tansuasici/claude-design-kit/compare/v0.2.1...v0.2.2) (2026-11-11)
+
+
+### Features
+
+* **docs:** add agent_docs/sections.md for navigation, hero, pricing, call-to-action and footer sections, with the prompt router, CLAUDE.md and AGENTS.md pointing at it ([#11](https://github.com/tansuasici/claude-design-kit/issues/11)) ([eb68453](https://github.com/tansuasici/claude-design-kit/commit/eb68453d260fe47af47f424b53791982a7b62b53))
+
+
+### Bug Fixes
+
+* **hooks:** branch-protect checks only the push itself, so a feature-branch push chained with a PR command no longer gets blocked ([#12](https://github.com/tansuasici/claude-design-kit/issues/12)) ([eb68453](https://github.com/tansuasici/claude-design-kit/commit/eb68453d260fe47af47f424b53791982a7b62b53))
+* **install:** refuse a folder that already holds another Claude kit ([#10](https://github.com/tansuasici/claude-design-kit/issues/10)) ([eb68453](https://github.com/tansuasici/claude-design-kit/commit/eb68453d260fe47af47f424b53791982a7b62b53))
+
 ## 0.2.1 (2026-11-08)
 
 ### Fixed
