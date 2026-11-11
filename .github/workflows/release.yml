@@ -1,0 +1,27 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    name: Release Please
+    runs-on: ubuntu-latest
+    steps:
+      # On a push to main, opens or updates a release PR with the generated
+      # CHANGELOG entry and the version bumped in VERSION, package.json and the
+      # plugin manifests. Merging that PR tags the release and creates the
+      # GitHub release.
+      #
+      # Publishing stays manual: run `npm publish` from the tagged commit. The
+      # docs site is deployed by hand too, so nothing here dispatches it.
+      - uses: googleapis/release-please-action@v4
+        with:
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
