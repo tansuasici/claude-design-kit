@@ -94,6 +94,7 @@ do_cp "agent_docs/motion.md"
 do_cp "agent_docs/interface-guidelines.md"
 do_cp "agent_docs/direction.md"
 do_cp "agent_docs/brand-identity.md"
+do_cp "agent_docs/sections.md"
 
 # .claude/settings.json: merge the kit's hooks into an existing file instead of
 # skipping it (hooks never wired) or replacing it (user permissions lost).

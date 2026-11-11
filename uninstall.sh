@@ -50,7 +50,7 @@ to_remove=( "CLAUDE.md" )
 while IFS= read -r f; do to_remove+=( "${f#"$SRC"/}" ); done < <(
   find "$SRC/.claude/agents" "$SRC/.claude/hooks" "$SRC/.claude/skills" -type f | sort
 )
-for d in slop-signs tokens motion interface-guidelines direction brand-identity; do
+for d in slop-signs tokens motion interface-guidelines direction brand-identity sections; do
   to_remove+=( "agent_docs/$d.md" )
 done
 [ "$KEEP_PROJECT" = "0" ] && to_remove+=( "CLAUDE.project.md" "DESIGN_MAP.md" "linear.md" )

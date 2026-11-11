@@ -34,6 +34,11 @@ if has 'landing( page)?|hero|homepage|home page|marketing (page|site)|new page|p
   append "[Words before markup] Write the argument (claim → proof per section), the headline (≤2 lines) and one primary action before any layout. Never invent metrics, logos or testimonials; mark gaps [NEEDS PROOF]. See agent_docs/direction.md."
 fi
 
+# Page sections
+if has 'nav ?bars?|navigation bars?|site headers?|mega ?menus?|footers?|ctas?|calls? to action|call-to-action|pricing( page| table| section)?|plans? (page|table)|hero( section)?s?'; then
+  append "[Sections] Build only the sections the page argument asks for. agent_docs/sections.md has each section's variants, rules and slop signs: nav, hero, pricing, CTA, footer. Prices, tiers, urgency and social proof come from the user, never invented."
+fi
+
 # Motion
 if has 'anim(ate|ated|ates|ating|ation|ations)?|transitions?|motion|framer|gsap|keyframes?|smooth(er|ly)?|micro-?interactions?|hover effects?'; then
   append "[Motion] Frequency gate first: keyboard and 100+/day actions get no animation. Transform/opacity only, ease-out, UI under 300ms, reduced-motion guard. /motion-craft to build, /motion-review to judge."

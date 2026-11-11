@@ -31,6 +31,7 @@ At the start of every session, load context in tiers. Do not load everything at 
 7. `agent_docs/motion.md`: before adding or reviewing any animation.
 8. `agent_docs/interface-guidelines.md`: before shipping a form, a dialog, navigation, or anything a keyboard user has to reach.
 9. `agent_docs/brand-identity.md`: only for logo, palette or type-system work.
+10. `agent_docs/sections.md`: before building a navigation, hero, pricing, call-to-action or footer section.
 
 Before doing anything, restate the current design task in 1–2 sentences.
 Never build UI before Tier 1 is loaded: you can't follow a direction you
