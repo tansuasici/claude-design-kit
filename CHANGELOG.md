@@ -6,6 +6,14 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 From 0.2.2 on, release-please writes each entry from the conventional commits
 merged since the last release.
 
+## [0.2.3](https://github.com/tansuasici/claude-design-kit/compare/v0.2.2...v0.2.3) (2026-11-18)
+
+
+### Features
+
+* **skills:** add /store-screenshots for App Store and Google Play decks ([93bf9a6](https://github.com/tansuasici/claude-design-kit/commit/93bf9a631bf22254cbf8d8a40e5f1589e1b3840f))
+* **skills:** add /store-screenshots for App Store and Google Play decks ([6f8f65c](https://github.com/tansuasici/claude-design-kit/commit/6f8f65c6a9945635a2910f89b02f151b2e516b16))
+
 ## [0.2.2](https://github.com/tansuasici/claude-design-kit/compare/v0.2.1...v0.2.2) (2026-11-11)
 
 
