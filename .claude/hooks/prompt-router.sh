@@ -49,6 +49,11 @@ if has 'logos?|wordmarks?|app icons?|favicons?'; then
   append "[Logo] An existing logo stays unless the user says to change it. Use /logo: three directions that differ in idea or silhouette, the user picks, build in black, prove it at every size and on every ground, then export."
 fi
 
+# Store screenshots
+if has '(app|play) ?store( listing)? screenshots?|store screenshots?|screenshots? for (the )?(app|play) ?store|app store (listing|page|assets?)|play store (listing|page|assets?)|feature graphics?'; then
+  append "[Store screenshots] Use /store-screenshots: copy before layout, one idea per slide, look from DESIGN_MAP.md, real captures only. Ratings, user counts, awards and press come from the user or are marked [NEEDS PROOF]. Look at every export at ~160px wide. Never upload to a store."
+fi
+
 # Brand
 if has 'brand(ing)?|palettes?|colou?r (scheme|palette)s?|typefaces?|font pair(s|ing)?|visual identity'; then
   append "[Brand] Brand changes need the user's approval. Use /brand-method: sets differ on ≥2 axes, a reflex test against AI defaults, then stop for the user to pick. Claims about contrast are measured or labelled as estimates."

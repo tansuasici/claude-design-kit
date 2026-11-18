@@ -126,5 +126,34 @@ Used in: `agent_docs/interface-guidelines.md`, `.claude/skills/interface-check/`
 
 ---
 
+## app-store-screenshots: MIT
+
+Source: https://github.com/ParthJadhav/app-store-screenshots (commit `e889033b68f418952cc65ba897fe2b1ec63d1564`)
+
+```
+MIT License
+
+Copyright (c) 2026 Parth Jadhav
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
+
+Used in: `.claude/skills/store-screenshots/` (rewritten in the kit's words; sizes
+taken from the editor's device table). The editor itself and the Apple product
+bezels it ships are **not** bundled: `fetch-editor.sh` downloads them at the
+pinned commit into the user's project, together with upstream's LICENSE. Apple's
+bezels are under Apple's own terms (mock-ups of apps on Apple platforms only),
+not MIT.
+
+---
+
 The MIT notices above are abbreviated to the grant and condition; each license
 also includes the standard "AS IS" warranty disclaimer, which applies in full.

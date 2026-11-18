@@ -23,6 +23,10 @@
 .claude/skills/motion-craft/SKILL.md
 .claude/skills/motion-review/SKILL.md
 .claude/skills/slop-audit/SKILL.md
+.claude/skills/store-screenshots/SKILL.md
+.claude/skills/store-screenshots/copy.md
+.claude/skills/store-screenshots/fetch-editor.sh
+.claude/skills/store-screenshots/sizes.md
 .claude/skills/stress-ui/SKILL.md
 .gitignore
 .kit-manifest
