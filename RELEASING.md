@@ -77,11 +77,14 @@ npm publish --access public
 ## 5. Refresh the website
 
 The site (private repo `claude-design-kit-web`) shows the kit's version,
-CHANGELOG and skill docs. Its Deploy workflow runs on a self-hosted runner on
-the server, so it works despite the Actions lock:
+CHANGELOG and skill docs. While the account is billing-locked, deploy it from
+a local web checkout:
 
 ```bash
-gh workflow run deploy.yml --repo tansuasici/claude-design-kit-web
+pnpm run deploy
 ```
 
-Fallback from a local web checkout: `pnpm run deploy`.
+The lock also stops self-hosted runners, so the web's Deploy workflow (on the
+server's runner) only works once it lifts. After that,
+`gh workflow run deploy.yml --repo tansuasici/claude-design-kit-web` refreshes
+the site.
