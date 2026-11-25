@@ -24,6 +24,9 @@
     "claude-design-kit": "bin/claude-design-kit.js",
     "cdk": "bin/claude-design-kit.js"
   },
+  "scripts": {
+    "validate": "bash scripts/validate.sh"
+  },
   "files": [
     "bin/",
     "agents/",
